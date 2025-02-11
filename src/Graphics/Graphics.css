@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+}
+
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+}
+
+#blob {
+    z-index: -4;
+    background-color: aliceblue;
+    height: 400px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 100%;
+    background: linear-gradient(
+        to right,
+        white,
+        rgb(0, 187, 255)   
+    );
+    animation: rotate 3s infinite linear; 
+} 
+
+#blur {
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+    backdrop-filter: blur(12vmax);
+}
+
+#imageCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensure items are aligned at the top */
+    width: 100%;  /* Ensure it spans the full width */
+    margin-top: 20px; /* Add space between content above and the images */
+    text-align: center; /* Center text and images */
+}
+
+#imageCol div {
+    padding-top: 100px;
+}
+
+#imageCol h1 {
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: white;
+    white-space: nowrap;
+    margin: 0rem;
+    z-index: 3;
+}
+
+#imageCol p {
+    z-index: 3;   
+}
+
+#imageCol img {
+    width: 60%; /* Make the images a bit smaller */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 100px; /* Space between images */
+}
+
+#book {
+    align-items: center; /* Center the images */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.imageSetBack {
+    transition: opacity 0.5s, transform 1s ease;
+}

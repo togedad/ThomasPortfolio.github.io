@@ -1,5 +1,6 @@
 import './style.css';
 import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 const scene = new THREE.Scene();
 
@@ -7,6 +8,8 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 
 const canvas = document.querySelector('#main_bg'); // Ensure this exists in HTML
 const renderer = new THREE.WebGLRenderer({ canvas });
+
+const controls = new OrbitControls(camera, renderer.domElement)
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -26,6 +29,9 @@ scene.add(pointLight)
 
 function renderLoop() {
   requestAnimationFrame(renderLoop);
+  torusKnot.rotateY(0.01)
+
+  controls.update()
   renderer.render(scene, camera);
 }
 
