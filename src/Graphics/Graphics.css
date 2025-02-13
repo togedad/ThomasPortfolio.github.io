@@ -1,5 +1,31 @@
 body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+h1 {
     background-color: black;
+    color: white;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 100vw;
+    font-size: 300px;
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 100vw;
+    font-size: 150px;
 }
 
 @keyframes rotate {
@@ -50,7 +76,7 @@ body {
     align-items: center;
     justify-content: flex-start; /* Ensure items are aligned at the top */
     width: 100%;  /* Ensure it spans the full width */
-    margin-top: 20px; /* Add space between content above and the images */
+    margin-top: 10px; /* Add space between content above and the images */
     text-align: center; /* Center text and images */
 }
 
@@ -73,6 +99,7 @@ body {
 #imageCol img {
     width: 60%; /* Make the images a bit smaller */
     height: auto; /* Maintain aspect ratio */
+    max-height: 80vh;
     margin-bottom: 100px; /* Space between images */
 }
 
@@ -85,4 +112,11 @@ body {
 
 .imageSetBack {
     transition: opacity 0.5s, transform 1s ease;
+}
+
+#new3 {
+    width: 60%; /* Make the image a bit smaller */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80vh; /* Optional: Limit height to prevent large images */
+    object-fit: contain; /* Ensure it doesn't stretch */
 }

@@ -17,7 +17,7 @@ camera.position.setZ(30);
 
 const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
 const wireframeMat = new THREE.MeshBasicMaterial({ color: 0xffff00, wireframe: true });
-const wireLightMat = new THREE.MeshStandardMaterial({ color: 0xffff00, wireframe: true });
+const wireLightMat = new THREE.MeshStandardMaterial({ color: 0xffffff, wireframe: true });
 const torusKnot = new THREE.Mesh(geometry, wireLightMat);
 scene.add(torusKnot);
 

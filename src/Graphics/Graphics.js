@@ -1,5 +1,5 @@
-import '/src/Graphics/Graphics.css';
 import '/src/style.css';
+import '/src/Graphics/Graphics.css';
 
 const blob = document.getElementById("blob");
 const range = 300; // The range within which the element should be considered "in the center"

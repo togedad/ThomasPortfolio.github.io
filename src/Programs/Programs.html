@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Graphics</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    <a href="/index.html" class="home-btn">Home</a>
+    <h1 style="color: white;">Programming</h1>
+
+    <div id="image-track" data-prev-percentage="0">
+        <div>
+          <video width="600" controls autoplay loop muted>
+            <source src="/src/vids/RabidRabit.mp4" type="video/mp4">
+          </video>
+          <h2>Raucous Rabid</h2>
+          <p>This is a game about playing as a rabbit making his way down to hell to take it over! Written in pygame and inspired by games such as "Splunky"</p>
+        </div>
+        
+        <img src="/src/img/programs/Frogger.png" class="image" draggable="false">
+        
+        
+        <div>
+          <h2>Link Bridge</h2>
+          <p>Game about spotting words in a word search and making a bridge to platform, 6 total levels where players have to think ahead to to use plan a path across the chasm to escape the tropical</p>
+          <video width="600" controls autoplay loop muted>
+            <source src="/src/vids/LinkBridge.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+        <img src="/src/img/programs/Screenshot from 2025-02-12 22-22-33.png" class="image" draggable="false"> 
+        
+        <div>
+          <video width="600" controls autoplay loop muted>
+            <source src="/src/vids/metro_game.mp4" type="video/mp4">
+          </video>
+          <h2>Metroidvania</h2>
+          <p>This game was fun to develop! It had a small boss where the palyer would have to make there way around the map collecting items to unlock the next sector (classic Metroidvania format). When collected all of them the player could progress to the boss and win the game (or die).</p>
+        </div>
+        
+        <div class="image">
+          <video width="600" controls autoplay loop muted>
+            <source src="/src/vids/planet.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div>
+          <video width="600" controls autoplay loop muted>
+            <source src="/src/vids/Hello World 2025-02-12 22-48-16.mp4" type="video/mp4">
+          </video>
+          <h2>3D with OpenGL</h2>
+        </div>
+
+    </div>
+    <h2>click and drag to move the images across the screen</h2>
+    
+    <script type="module" src="/src/Programs/Programs.js"></script>
+  </body>
+</html>
